@@ -5,14 +5,15 @@ import utilities.Driver;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 public class Hooks {
-    @BeforeAll
-    public static void setUpTestEnvironment() {
-        Driver.getDriver();
-    }
 
-    @AfterAll
-    public static void tearDownTestEnvironment() {
-        Driver.closeDriver();
-    }
+	@BeforeAll
+	public static void setUpTestEnvironment() {
+		Driver.getDriver();
+	}
+
+	@AfterAll
+	public static void tearDownTestEnvironment() {
+		Driver.closeDriver();
+	}
 
 }

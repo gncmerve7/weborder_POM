@@ -4,64 +4,64 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
-    @FindBy(linkText = "Weborder")
-    private WebElement webOrderLink;
 
-    @FindBy(linkText = "Webautomation")
-    private WebElement webAutomationLink;
+	@FindBy(linkText = "Weborder")
+	private WebElement webOrderLink;
 
-    @FindBy(linkText = "Target Market")
-    private WebElement targetMarketLink;
+	@FindBy(linkText = "Webautomation")
+	private WebElement webAutomationLink;
 
-    @FindBy(linkText = "Booking")
-    private WebElement bookingLink;
+	@FindBy(linkText = "Target Market")
+	private WebElement targetMarketLink;
 
-    @FindBy(linkText = "Handling Certifications")
-    private WebElement handlingCertificationLink;
+	@FindBy(linkText = "Booking")
+	private WebElement bookingLink;
 
-    @FindBy(linkText = "File Uploading")
-    private WebElement fileUploadingLink;
+	@FindBy(linkText = "Handling Certifications")
+	private WebElement handlingCertificationLink;
 
-    @FindBy(css = "h1.display-1.text-fifth")
-    private WebElement exploreInarTestingWorldTitletext;
+	@FindBy(linkText = "File Uploading")
+	private WebElement fileUploadingLink;
 
-    // Constructor
-    public HomePage() {
-        super();
-    }
+	@FindBy(css = "h1.display-1.text-fifth")
+	private WebElement exploreInarTestingWorldTitletext;
 
-    // Page Actions with Java Methods
-    public void clickOnWeborderLink() {
-        webOrderLink.click();
-    }
+	// Constructor
+	public HomePage() {
+		super();
+	}
 
-    public void clickWebAutomationLink() {
-        webAutomationLink.click();
-    }
+	// Page Actions with Java Methods
+	public void clickOnWeborderLink() {
+		webOrderLink.click();
+	}
 
-    public void clickTargetMarketLink() {
-        targetMarketLink.click();
-    }
+	public void clickWebAutomationLink() {
+		webAutomationLink.click();
+	}
 
-    public void clickBookingLink() {
-        bookingLink.click();
-    }
+	public void clickTargetMarketLink() {
+		targetMarketLink.click();
+	}
 
-    public void clickHandlingCertificationLink() {
-        handlingCertificationLink.click();
-    }
+	public void clickBookingLink() {
+		bookingLink.click();
+	}
 
-    public void clickFileUploadingLink() {
-        fileUploadingLink.click();
-    }
+	public void clickHandlingCertificationLink() {
+		handlingCertificationLink.click();
+	}
 
-    public String getWelcomeText() {
-        return exploreInarTestingWorldTitletext.getText();
-    }
+	public void clickFileUploadingLink() {
+		fileUploadingLink.click();
+	}
 
-    public void refreshPage() {
-        driver.navigate().refresh();
-    }
+	public String getWelcomeText() {
+		return exploreInarTestingWorldTitletext.getText();
+	}
+
+	public void refreshPage() {
+		driver.navigate().refresh();
+	}
 
 }
-
